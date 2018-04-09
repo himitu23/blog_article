@@ -21,4 +21,5 @@
 連絡は以下まで。
 
 Twitter: @_tokina23
+
 E-Mail:　tokina23centcircumflex@gmail.com	
