@@ -5,10 +5,10 @@ Template of git and article
 - VSCodeに慣れたい
 - Githubを使いこなしたい
 - 作成した記事をバージョン管理したい
-    - ソースコードや画像の管理も同時に簡単にしたい
+    - ソースコードや画像の管理も同時に簡単にしたい
 
 まずは参考にしたURLを以下においておく
-* Markdown記法について
+* Markdown記法について
 https://qiita.com/Thermidor/items/b684cfabe0f2fde0c67b
 * Visual Studio Code の git 連携機能と git コマンドについて 
 https://qiita.com/satokaz/items/4660ce57ca8eb456a096
@@ -28,29 +28,29 @@ https://qiita.com/haifuri/items/5439586ae69c88d95539
 https://qiita.com/rma/items/75f502e784b7164b8813
 
 
-## VSCodeからGithubに投げるまで
+## VSCodeからGithubに投げるまで
 
 最初に参考にするのはこれ
 http://www.atmarkit.co.jp/ait/articles/1507/21/news017_2.html
 https://git-scm.com/book/ja/v2/Git-の基本-Git-リポジトリの取得
 
-1. Githubをインストールする
+### 1. Githubをインストールする
 
-2. VSCodeからローカルレポジトリを作成する
+### 2. VSCodeからローカルレポジトリを作成する
 
 > 統合ターミナル を Ctrl + @ で 表示します.
 
 これによって編集中のディレクトリから、CLIのコマンドの入力が出来るようになる。
 
 
-3. ターミナルから、必要なファイルを管理対象にする
+### 3. ターミナルから、必要なファイルを管理対象にする
 https://git-scm.com/book/ja/v2/Git-の基本-Git-リポジトリの取得
 
 ここを参照する。今回は既に作成してあるファイルをアップロードすることに注意する。また、tmpファイルを含むすべてを管理対象にする。
 
 git add *
 
-4.  状態を変更したときの出力を覚えておく
+### 4.  状態を変更したときの出力を覚えておく
 
 git statusすると、なにもない場合には
 
@@ -70,7 +70,7 @@ Changes not staged for commit:
         modified:   SecHack365Summary_sample.md
 ```
 
-5. ステージング（記録するファイル）の指定
+### 5. ステージング（記録するファイル）の指定
 
 ああらしく作成したファイルをgit addすると、そのファイルが管理対象となる。このときcommitすると、その状態が記録される。一度コミットすると、次回編集時には再度ステージング（git add）してやらないといけない。
 
@@ -87,7 +87,7 @@ Changes not staged for commit:
 ```
 上記のようにnre fileは新しく作成され、ステージングされたファイル、modifiedで編集されたファイルを示している。
 
-6. コミットを行う
+### 6. コミットを行う
 
 変更のコミットを行う。5.でステージングエリアの準備ができたのえあれば、その変更内容をコミットすることが出来る。
 
@@ -104,11 +104,11 @@ git commit -vするとdiffを表示してくれるため便利である。
 
 ここで定期的にgit statusで状態を確認する
 
-7. 不必要なファイルを管理対象から外す
+### 7. 不必要なファイルを管理対象から外す
 
 参考URLの”ファイルの削除”を参考にする
 
-8. オンラインgithubとgitを連携する
+### 8. オンラインgithubとgitを連携する
 
 以下の記事を参考にする。
 https://qiita.com/fuji-shin/items/06963c7a1b3219347348
