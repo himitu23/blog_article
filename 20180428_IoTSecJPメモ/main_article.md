@@ -1,4 +1,4 @@
-![](IMG_6456.JPG)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180428_IoTSecJPメモ/IMG_6456.JPG)
 
 # IoTSecJP Tokyo #3に参加してきました
 
@@ -20,7 +20,7 @@ http://ruffnex.net/iotsecjp/
 
 当日のスケジュールはこんな感じでした。
 
-![](2018-06-03-14-13-55.png)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180428_IoTSecJPメモ/2018-06-03-14-13-55.png)
 
 ## 1. Phone Aplliさん
 
@@ -467,6 +467,10 @@ https://iotsecjp.booth.pm/items/820202
 
 また、現在私個人の活動としては、いくつかありまして、一人で進めようとしているのはラズパイを使った自動車の解析です。Amazonでうっていた謎のツールも入手したり、はんだづけしたりと、すごくゆっくりですが趣味程度に嗜んでいます。
 
-いろいろブログにしたいことも多いのですが、なかなかはかどりません！
+いろいろブログにしたいことも多いのですが、なかなかはかどりませんがぼちぼちマイペースでやっていきましょう。
 
-がんばります！
+### おまけ
+
+当日のつぶやきがTogetterでまとめられています。
+
+IoTSecJP東京 #3のつぶやきまとめ - Togetter https://togetter.com/li/1222571
