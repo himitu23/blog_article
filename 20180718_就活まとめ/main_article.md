@@ -46,7 +46,7 @@
 
 その結果は以下の図のとおりです．
 
-![@_tokina23の就活戦歴](./img/Result_Recruit.png)
+![@_tokina23の就活戦歴](https://raw.githubusercontent.com/himitu23/blog_article/master/20180718_就活まとめ/img/Result_Recruit.png)
 
 実は最も早く選考に臨んだのはAWSでしたが，あえなく最終選考で落ちてしまい，そこから迷走が始まりました．一時期はこころが・・・となりましたが，現在は元気です．
 
@@ -99,9 +99,9 @@ D社に関しては，全くのあらぬ方向からのお誘いを受け，最�
 
 もしこれから就活される方がいれば，参考にしてください．
 
-![](./img/Flow1.png)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180718_就活まとめ/img/Flow1.png)
 
-![](./img/Flow2.png)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180718_就活まとめ/img/Flow2.png)
 
 ### いろんな就活サイトについて
 
