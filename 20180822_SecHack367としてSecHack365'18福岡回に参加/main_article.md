@@ -1,6 +1,6 @@
 # SecHack365'18福岡回にOB生として参加してきました
 
-![](img/IMG_3433.JPG)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/IMG_3433.JPG)
 
 昨年2017年度に参加させていただきましたSecHack365ですが、先日ありましたSecHack365'18へ修了生(SecHack367)として参加させていただきました。
 
@@ -31,7 +31,9 @@ https://sechack365.nict.go.jp/
 
 株式会社Nulabさんにて会社の成り立ちやエンジニアの人とコミュニケーションできる時間をいただきました。
 
-![](img/IMG_3429.JPG)
+最近こうしたプロジェクト管理のサービスはそれこそ多く見られますが、そこでBacklogがどう成長してきたかを聞くことができました。（サイボウズのkintoneとか新しいですね）
+
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/IMG_3429.JPG)
 
 また、最後に私たち修了生から、昨年度の取り組みやアドバイスなどについてのプレゼンをしました。
 
@@ -49,7 +51,7 @@ https://sechack365.nict.go.jp/
 
 よるには恒例？の倫理についてのお話を聞く機会がありました。
 
-![](img/IMG_3445.JPG)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/IMG_3445.JPG)
 
 ### 三日目 08/24
 
@@ -61,7 +63,7 @@ https://sechack365.nict.go.jp/
 
 ちなみに帰りに福岡バスターミナルにてもつ鍋を@takuzoo3868くんと食べました。だしがめっちゃ効いており、しめのご飯が最高でした！（？）
 
-![](img/IMG_3541.JPG)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/IMG_3541.JPG)
 
 ## 今年のSecHack365の魅力
 
@@ -104,7 +106,9 @@ https://sechack365.nict.go.jp/
 
 また、私と話してSecHack365を知ってくれた人もおり、昨年度の私たちのアウトプットが今年にちゃんとつながっていることを感じましたね。
 
-![](img/IMG_3483.JPG)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/IMG_3483.JPG)
+
+個人的に”マンダラート”ってのをつかって進めているのが印象的でした。私も普段の研究などに取り入れてみたいと思います。
 
 ## 最後に
 
@@ -126,5 +130,5 @@ https://sechack365.nict.go.jp/2017artifact/
 
 https://twitter.com/SecHack367
 
-![](img/2018-08-27-16-42-54.png)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20180822_SecHack367としてSecHack365'18福岡回に参加/img/2018-08-27-16-42-54.png)
 
