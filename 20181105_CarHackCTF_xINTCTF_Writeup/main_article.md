@@ -1,4 +1,4 @@
-# Car Hacking Challenge (and xINT CTF) Write up! @ CODE BLUE 2018
+# Write Up - Car Hacking Challenge @ CODE BLUE 2018
 
 ![](https://raw.githubusercontent.com/himitu23/blog_article/master/20181105_CarHackCTF_xINTCTF_Writeup/img/title.PNG)
 
