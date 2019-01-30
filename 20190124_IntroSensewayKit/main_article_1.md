@@ -2,11 +2,11 @@
 
 Getting start the Senseway LoRaWAN Starter Kit
 
-こんにちは．最近修論をどうにかやっつけたtokina(himitu)です．今回はセンスウェイさんにLoRaWANスターターキットを頂いたので，その紹介をしたいと思います．
+こんにちは．最近修論をどうにかやっつけたtokina(himitu)です．来週修論発表です（どうでもいい）．今回はセンスウェイさんにLoRaWANスターターキットを頂いたので，その紹介をします！１月に間に合いました！！
 
-**長いので記事を分けました．センサ値取得とか具体的な話は次の記事を見てください**
+**長いので記事を分けました．センサ値取得〜可視化とか具体的な実装の話は次の記事を見てください**
 
-//続きかいたらここに貼るよ
+//ここにリンクはるよ
 
 HIRATA Kenjiさん（@field_k），ありがとうございます！
 
@@ -119,7 +119,7 @@ https://service.senseway.net/manual/senseway-rental-gateway-manual/
 
 うまく接続すると，webコンソールのStatus>Overviewで確認できます．DHCPでアドレスを割り当てる場合はここから確認すればいいはず．ゲートウェイ自体もAPになりますが，そっちは192.168.55.0/24で割り当てられます．
 
-SSH接続を試みてみたところ，username/Passwordを聞かれますが，認証情報は公開されていません．Nmapすると80,22番ポートが空いていました．
+SSH接続を試みてみたところ，username/Passwordを聞かれますが，認証情報は公開されていません．Nmapすると80,22番ポートが空いていました(？？)．
 
 ### ノードのプログラミング
 
@@ -137,7 +137,7 @@ Windowsで試したのですが，ドライバの関係か，最初は認識さ�
 
 Arduinoとモジュールとの通信はD11/D12ピンをUARTシリアルで行っているようなので，基本的にArduinoのSoftware Serialから行うことができます（D11 UART_TX，D12 UART_RX）．
 
-しかしこれだと1からプログラミングすることになってしまうので，用意されているライブラリを使います．これには「KashiwaGeeks」というツールが利用できるそうです．
+しかしこれだと1からプログラミングすることになってしまうので，用意されているライブラリを使います．これには**「KashiwaGeeks」**というツールが利用できるそうです．山口知昭さんという有名な方が開発したそうです．
 
 https://github.com/ty4tw/KashiwaGeeks
 
@@ -152,6 +152,19 @@ https://github.com/ty4tw/KashiwaGeeks
 > 5. LoRaWAN devices control.
 > 6. Allow payload to be created bit by bit.
 
+ITメディアでも取り上げられています．
+
+http://blogs.itmedia.co.jp/nabe/2017/12/lorawan+kashiwageeks.html
+
+> **KashiwaGeeks**を導入すると、
+> １）スリープ機能による省電力化
+> ２）タイマーによるウェイクアップ機能
+> ３）INT0、INT1割り込み機能
+> ４）タスク実行管理機能
+> が提供されます。
+
+多分Kiwitechのデバイスが主な対象なようです．ソラコムさんのデバイスでも利用できるみたいです．
+
 これにより，ピン配置が正しければ問題なくLoRaモジュールを使うことができるようになります．
 
 なお，ADB922S.cppで以下のように定義されていますね．
@@ -162,7 +175,7 @@ https://github.com/ty4tw/KashiwaGeeks
 #define LoRa_WAKEUP_PIN            7
 ```
 
-また，ノードのActivationの方式としてABPとOTAAという2種類があるのですが，センスウェイさんのLoRaWANサーバではOTAAのみ利用可能だそうです（最初ちょっと面倒ですが，こっちのほうがセキュアですね）．
+また，ノードのActivationの方式としてABPとOTAAという2種類があるのですが，センスウェイさんのLoRaWANサーバではOTAAのみ利用可能だそうです（最初ちょっと面倒ですが，こっちのほうがセキュアですね）．違いはぐぐってください．
 
 ##### KashiwaGeeksの特徴（メモ）
 
@@ -184,7 +197,7 @@ KashiwaGeeksをいじってて思ったこととしては，間欠動作を便�
 
 https://github.com/ty4tw/KashiwaGeeks/tree/master/examples/End-node_Sample
 
-書き込み成功しているようなので，Arduino IDE上からツール＞シリアルモニタをhリア気，ボーレード57600(bps)で見てみます．
+書き込み成功しているようなので，Arduino IDE上からツール＞シリアルモニタを開き，ボーレード57600(bps)で見てみます．
 
 ```
 **** End-node_Sample *****
@@ -241,4 +254,4 @@ temperature: 1020 Degreesが気になりますが（このサンプルではセ�
 
 個人的に，LoRa無線を簡単に使うためのRadioHeadライブラリや，LoRaWANプロトコルに対応するためのLMiCライブラリ（IBMのやつ）が使えるのか気になります．書き込みだけはできるっぽい？
 
-//頑張って書いたらここにもリンク貼ります
+それでは具体的な実装とか，実際にプログラム〜可視化を行っているのはこちらです↓
