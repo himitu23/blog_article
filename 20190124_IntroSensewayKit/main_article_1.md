@@ -22,7 +22,7 @@ https://www.senseway.net
 
 昨年**「IoTつくるよ！」**というIoTのプチ博覧会のようなイベントにてアールエスコンポーネンツさんのお仕事を手伝いました．
 
-![IoTMaking](.\img\IoTMaking.jpg)
+![IoTMaking](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/IoTMaking.jpg)
 
 https://www.tsukuruyo.net
 
@@ -42,7 +42,7 @@ IoTつくるよ！にセンスェイさんがいるのは当日，開始時間�
 
 これがきっかけとなり，スターターキットをいただくことになりました．それが昨年末のことです（あれから研究をずっとやっていました）．
 
-![IoTMaking_Senseway](.\img\IoTMaking_Senseway.jpg)
+![IoTMaking_Senseway](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/IoTMaking_Senseway.jpg)
 
 ## LoRaWANスターターキット
 
@@ -52,7 +52,7 @@ LoRaはSemtech社が開発している無線の変調方式で，LoRaWANはSemte
 
 センスウェイさんが提供しているLoRaWANサービスはSenseWay Mission Connectと呼ばれているIoT通信プラットフォームです，
 
-![](./img/Senseway_Arch.png)
+![](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/Senseway_Arch.png)
 
 https://www.senseway.net より
 
@@ -73,11 +73,11 @@ https://store.senseway.net/items/14939967
   - LANケーブル
 - 温度センサ（ADT7410）
 
-![StarterKit](.\img\StarterKit.jpg)
+![StarterKit](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/StarterKit.jpg)
 
 実際のLoRaノード（デバイス）はこちら．アンテナがごつい！
 
-![LoRaNode](./img\LoRaNode.jpg)
+![LoRaNode](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/LoRaNode.jpg)
 
 
 
@@ -93,7 +93,7 @@ https://store.senseway.net/items/14939967
 
 ここでデバイスの登録などができます．
 
-![MissionConnect](.\img\MissionConnect.PNG)
+![MissionConnect](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/img/MissionConnect.PNG)
 
 まず，このデバイス管理のところへキットに入っているLoRaノードのDevEUIを追加します．Dev EUIはLoRaWANにおいてデバイスを識別するためのIDで，他のサービスでもこれは必要になってきます．
 
@@ -170,7 +170,7 @@ KashiwaGeeksをいじってて思ったこととしては，間欠動作を便�
 
 全体のプログラムのイメージを簡単なフロー図にまとめてみました．
 
-![KashiwaGeeksImg](./img/KashiwaGeeksImg.png)
+![KashiwaGeeksImg](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/img/KashiwaGeeksImg.png)
 
 定期動作を原則とし，用意したタスクを定期実行するようです．このとき，動作時間が重ならないように気をつける必要があります．多分重なると処理に遅延が発生する原因とかになると思います．
 
@@ -217,7 +217,7 @@ temperature: 1020 Degreesが気になりますが（このサンプルではセ�
 
 ここでもしやと思い，webのSenseWay Mission Connectを見てみると，Uplinkのカウンタが増えています．ということは，とりあえずこれでLoRaWANサーバにデータの送信が成功していることがわかります．
 
-![Message](.\img\Message.png)
+![Message](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/Message.png)
 
 私はこれでできるとは思っていなかったので驚きました．なぜなら普通はArduinoのプログラム中にDev EUIを書き込まないとLoRaWANサーバがノードを認識できない（はず）からです．なのにこうしてUplinkのカウンタが増えているこということは，ユーザが変更できない領域にDev EUIが書き込まれていることを指しているということになります．
 
