@@ -214,9 +214,9 @@ SELECT
     mod.dr,
     mod.port
 INTO
-    SensewayVisualizeTestOutput
+    SensewayVisualizeTestOutput #設定に依存
 FROM
-    SensewayNodeVisualizeTest
+    SensewayNodeVisualizeTest #設定に依存
 ```
 
 *Azure IoT Hubが付与するJSONはこちらを参考：https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-inputs*
@@ -257,7 +257,7 @@ App StoreでPower BIアプリをダウンロードし，ログインするとダ
 
 ![App2](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/App2.PNG)
 
-いくつか表示形式を用意してみました．一番上は折れ線グラフ，その下は現在の値を表示しています．これで自宅の気温が一発でわかります！ｗ
+いくつか表示形式を用意してみました．一番上は折れ線グラフ，その下は現在の値を表示しています．これで自宅の気温が一発でわかります！
 
 もちろんグラフだけを表示する事もできます．
 
@@ -288,8 +288,8 @@ https://service.senseway.net/price/
 SenseWay Mission Connectにログインし，デバイス一覧から各デバイスの最大通信量を見ることができます．今回，キットを試した後はこんな感じになっていました．
 
 ```
-No.	DevEUI	名前	タイプ	ステータス	UpLink今月最大
-1	**********	Senseway LoRa node example	ADB922S	使用中	919	0		
+No.	DevEUI		名前							タイプ	ステータス	UpLink今月最大
+1	**********	Senseway LoRa node example	ADB922S	使用中	919
 ```
 
 これだと300円の繰り上がりの400円くらいでしょうか．この月はどれだけ使ってもこれを下回れば400円ということになります？
