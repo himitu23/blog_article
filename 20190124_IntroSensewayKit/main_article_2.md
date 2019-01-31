@@ -288,7 +288,7 @@ https://service.senseway.net/price/
 SenseWay Mission Connectにログインし，デバイス一覧から各デバイスの最大通信量を見ることができます．今回，キットを試した後はこんな感じになっていました．
 
 ```
-No.	DevEUI		名前							タイプ	ステータス	UpLink今月最大
+No.	DevEUI		名前	タイプ	ステータス	UpLink今月最大
 1	**********	Senseway LoRa node example	ADB922S	使用中	919
 ```
 
