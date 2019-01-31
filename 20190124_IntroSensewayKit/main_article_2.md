@@ -57,7 +57,7 @@ https://ht-deko.com/arduino/uno.html
 
 つなげるとこんな感じに．
 
-![ConnectPin](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/img/ConnectPin.png)
+![ConnectPin](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/ConnectPin.png)
 
 KashiwaGeeksのサンプルにあった「I2C_Temp_Sensor_and_GPS_Sample」とwsnakさんのブログを参考に，とりあえずKashiaGeeks上で温度の値だけ取れるようにしてみます．I2Cの利用はWire.hが使えるとか．8bitで値を取得します（16bitでもできるっぽい？）．
 
@@ -153,7 +153,7 @@ Senseway Mission Connectのデバイスの通信量が増えていることを�
 
 しかしこれだとセンサのデータの中身を見ることができません．
 
-そこで**Azure IoT Hubに投げて可視化**してみましょう．
+そこで**Azure IoT Hubに投げて可視化**してみます．
 
 ### Azureの利用 - 可視化を試す
 
@@ -161,9 +161,9 @@ Azure IoT Hubを利用して可視化サービスであるPower BIを試しま�
 
 ![Arch](https://raw.githubusercontent.com/himitu23/blog_article/master/20190124_IntroSensewayKit/img/Arch.png)
 
-**サーバーレス！**
+**サーバーレスになっていますね！**
 
-まずAzure IoT Hubとの連携ができるとのことなので，センスウェイさんの公式サイトのマニュアルを参考に設定とかを行います．
+まず公式でAzure IoT Hubとの連携ができるとアナウンスしていたので，センスウェイさんの公式サイトのマニュアルを参考に設定とかを行います．
 
 https://service.senseway.net/manual/manual-with-azure-iot-hub/
 
@@ -288,10 +288,7 @@ https://service.senseway.net/price/
 SenseWay Mission Connectにログインし，デバイス一覧から各デバイスの最大通信量を見ることができます．今回，キットを試した後はこんな感じになっていました．
 
 ```
-No.	DevEUI	名前	タイプ	ステータス	UpLink
-今月最大	DownLink
-今月最大	通信量
-詳細	備考	編集
+No.	DevEUI	名前	タイプ	ステータス	UpLink今月最大
 1	**********	Senseway LoRa node example	ADB922S	使用中	919	0		
 ```
 
