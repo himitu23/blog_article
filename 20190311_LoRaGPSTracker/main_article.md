@@ -1,10 +1,14 @@
 # Dragino製 LoRaWAN GPS Trackerを試してみた&設定変更手順
 
+## TL;DR
+
 How to configure LoRaWAN GPS Tracker (ABP to OTAA)?
 
-今回、Dragino製のLoRa  GPS Trackerを試したみたので、そのメモを残して置きたいと思います。なお、検証は電波遮断シールド下で試しています。結果としては、上手く行かなかったので、マニュアル実行方法などについて触れておきたいと思います。
-
 というわけで、今回もLoRaWANネタです。
+
+今回、Dragino製のLoRa  GPS Trackerを試したみたので、そのメモを残して置きたいと思います。なお、検証は電波遮断シールド下で試しています。**結果としては、上手く行かなかったので**、マニュアル実行方法などについてまとめてお後と思います。
+
+//目次
 
 Dragino社はLoRaデバイスを代表に、様々なIoTデバイスを取り扱っている中国深センのベンチャー企業で、そのドラゴンのアイコンが特徴です。
 
@@ -20,7 +24,7 @@ http://www.openwave.co.jp/
 
 ※LoRaWANやLoRa、TTN(The Things Network)については解説しません。
 
-### Dragino製 LoRa GPS Trackerについて
+## Dragino製 LoRaWAN GPS Tracker(LGT-92)について
 
 現在、入手はAliExpress経由がいいかもしれないです。ただし、ヨーロッパの技適を取得しているものの、日本での技適取得はまだなので注意してください。
 
@@ -41,8 +45,6 @@ AU915: Default frequency band AU915
 US915: Default frequency band US915
 ```
 
-
-
 Dragino製品としての名前はLGT-92です。
 
 ### 何ができるのか
@@ -57,7 +59,7 @@ Dragino製品としての名前はLGT-92です。
 
 <http://www.dragino.com/downloads/downloads/LGT_92/Datasheet_LGT-92.pdf
 
-### LoRaWAN GPS Tracker (LGT-92)の利用方法について
+### 使い方
 
 まず、Dragino製品の紹介ページを確認してマニュアルを参照します。
 
@@ -207,7 +209,7 @@ AllThingsTalk Makerでの変換例（ABCL）
 
 基本的に計算方法が記載されているので、うまくリファレンス読みながら書けば問題ないはずです。
 
-## 設定の変更方法について(ABP→OTAA)
+## 設定の変更方法(ABP→OTAA)
 
 LoRaWANのノードのアクティベーション方式にはABP（Activation by Personalization）とOTAA（Over the air Activation）の2種類あります。
 
@@ -224,6 +226,8 @@ LoRaWAN GPS Trackerは非常にシンプルなつくりなので、OTAA方式で
 ![TTLSerialCable](./img/TTLSerialCable.png)
 
 LoRaWAN GPS TrackerにはMicroUSBケーブル接続口しかないので、それをTTLへ変換するケーブルが同梱されています。これをつかってこんな感じで繋ぎます。
+
+黒：GND, 緑：RXD, 白：TXD
 
 ![PinAssign](./img/PinAssign.jpg)
 
@@ -349,15 +353,23 @@ ABPへの変更後、TTN上で実際にメッセージが送信されている�
 
 しかし、payloadの部分に「FF FF FF FF 0F 17 00 2A 01 21」とあるように、GPSの情報はFFで埋められており、実際に送信できていませんでした。おそらく、バッテリと加速度の情報は送信できているようです。さらに、よく見ると11バイトです。もともと12バイトなので、変換コードがエラーを吐いて動かない可能性もあります（AllthingsTalkではエラーになっていました）。
 
-### 最後に
+## 正常に動作しない・・・
+
+正常に動作しませんでした（結論）。
+
+メッセージの送信はうまく行われているのですが、
+
+## 最後に
 
 今回お借りしたLoRaWAN GPS Trackerはかなり初期のものだった可能性があります。そのため、ファームウェアが古く、挙動がおかしかったのかもしれません。今回は位置情報は取得できなかったもののアクティベーションからメッセージの送信まではうまくいいきました。
 
 非常にコンパクトで、なおかつ低消費電力で位置情報を送信できるGPS Trackerは人の流動管理などで非常に有益そうです。そのためにも、もっとLoRaWANのゲートウェイを増やしていく必要がありますね。ユースケースとしては、従業員につけて実際に仕事しているかの確認や、また動物につけてその生態を探るなどでしょうか。
 
-なお、今回LoRaWAN GPS Trackerをお借りしたので、
+なお、今回LoRaWAN GPS Trackerをお借りしたのはThe Things Networkアンバサダーの吉田さんです。以下は吉田さんのwebサイトです。最新のLoRaWAN情報をチェックできます！
 
-また今年の1月末〜2月頭に開催されたThe Things ConferenceでもGPS Tracker（おそらくDragino製のものではない）をAzure Central Bridgeで可視化するデモもありました。
+http://joomlaweb.blog117.fc2.com
+
+今年の1月末〜2月頭に開催されたThe Things ConferenceでもGPS Tracker（おそらくDragino製のものではない）をAzure Central Bridgeで可視化するデモもありました。
 
 https://azure.microsoft.com/en-us/blog/the-things-network-and-azure-iot-connect-lorawan-devices/
 
