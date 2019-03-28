@@ -71,7 +71,7 @@ http://www.dragino.com/downloads/index.php?dir=LGT_92/
 
 まず、全体の動作概要はこんな感じです。
 
-![LGT92-Architecture](./img/LGT92-Architecture.PNG)
+![LGT92-Architecture](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/LGT92-Architecture.PNG)
 
 **動作手順**（マニュアルより）
 
@@ -223,19 +223,17 @@ LoRaWAN GPS Trackerは非常にシンプルなつくりなので、OTAA方式で
 
 まず、USB-TTLシリアルコンバータを買います。秋葉原のマルツで安く売ってたやつを買ってきました。
 
-![TTLSerialCable](./img/TTLSerialCable.png)
+![TTLSerialCable](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/TTLSerialCable.png)
 
 LoRaWAN GPS TrackerにはMicroUSBケーブル接続口しかないので、それをTTLへ変換するケーブルが同梱されています。これをつかってこんな感じで繋ぎます。
 
 黒：GND, 緑：RXD, 白：TXD
 
-![PinAssign](./img/PinAssign.jpg)
-
-![TTLSerialCable](./img/TTLSerialCable.png)
+![PinAssign](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/PinAssign.jpg)
 
 アクセスランプが点灯すればアクセスできます。LoRaWAN GPS Trackerの電源を入れるとアクセスランプが点灯するはずです。
 
-![Tracker&TTL](./img/Tracker&TTL.png)
+![Tracker&TTL](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/Tracker&TTL.png)
 
 WindowsからはTeraTermやputtyをつかってシリアルアクセスします。今回はMacなので、/dev/配下に見えます。cuコマンドなどでアクセスします。ボーレートは9600です。
 
@@ -343,11 +341,11 @@ ABPへの変更後、TTN上で実際にメッセージが送信されている�
 
 今回は自身が所有・管理しているゲートウェイでLoRaメッセージを受信したので、まずはTTN上のゲートウェイからメッセージの到達を確認します。
 
-![TTN](./img/TTN.png)
+![TTN](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/TTN.png)
 
 うまくアクティベーションされているっぽいので、登録したアプリケーションのデバイスを開いてみます。
 
-![TTN-2](./img/TTN-2.png)
+![TTN-2](https://raw.githubusercontent.com/himitu23/blog_article/master/20190311_LoRaGPSTracker/img/TTN-2.png)
 
 これでメッセージの送信が行われていることが分かり、正しくアクティベーションは通っている（＝デバイスが送信したデータが復号されていることが分かります）。
 
