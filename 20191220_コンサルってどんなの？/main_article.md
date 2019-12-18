@@ -181,7 +181,7 @@ https://www.careerinq.com/consultingfirm/
 
 
 
-![FIG4](J:\users\blog\20191220_コンサルってどんなの？\FIG4.png)
+![FIG4](https://raw.githubusercontent.com/himitu23/blog_article/master/20191220_%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%81%A3%E3%81%A6%E3%81%A9%E3%82%93%E3%81%AA%E3%81%AE%EF%BC%9F/FIG4.png)
 
 
 
