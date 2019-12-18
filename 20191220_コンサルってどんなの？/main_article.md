@@ -157,19 +157,19 @@ https://www.careerinq.com/consultingfirm/
 
 * 研究発表スライドの例
 
-![FIG2](J:\users\blog\20191220_コンサルってどんなの？\FIG2.png)
+![FIG2](https://raw.githubusercontent.com/himitu23/blog_article/master/20191220_%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%81%A3%E3%81%A6%E3%81%A9%E3%82%93%E3%81%AA%E3%81%AE%EF%BC%9F/FIG2.png)
 
 
 
 * コンサルティング業務でのスライドの例
 
-![FIG3](J:\users\blog\20191220_コンサルってどんなの？\FIG3.png)
+![FIG3](https://raw.githubusercontent.com/himitu23/blog_article/master/20191220_%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%81%A3%E3%81%A6%E3%81%A9%E3%82%93%E3%81%AA%E3%81%AE%EF%BC%9F/FIG3.png)
 
 
 
 このように比較的カッチリしたスライドを作ります。またスライド上部や下部のメッセージが通常のスライドと微妙に異なるのがわかると思います。比較すると以下のような感じです。
 
-![FIG1](J:\users\blog\20191220_コンサルってどんなの？\FIG1.png)
+![FIG1](https://raw.githubusercontent.com/himitu23/blog_article/master/20191220_%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%81%A3%E3%81%A6%E3%81%A9%E3%82%93%E3%81%AA%E3%81%AE%EF%BC%9F/FIG1.png)
 
 
 
@@ -285,4 +285,4 @@ https://www.amazon.co.jp/dp/4774183210/ref=cm_sw_em_r_mt_dp_U_Vyr-DbTVFG22E
 
 
 
-良いお年を！
+良いお年を！...メリークリスマス！
